@@ -1,0 +1,101 @@
+
+rakde@DESKTOP-AP6L2KU MINGW64 ~/Downloads (master)
+$ ssh -i "mydecemberkey.pem" ubuntu@ec2-18-188-37-108.us-east-2.compute.amazonaws.com
+The authenticity of host 'ec2-18-188-37-108.us-east-2.compute.amazonaws.com (18.188.37.108)' can't be established.
+ED25519 key fingerprint is SHA256:yAwvAEC2O89Wo2gXaN3sxjDjA0hv/mYtngs9z97+pAU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'ec2-18-188-37-108.us-east-2.compute.amazonaws.com' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-1048-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu Dec  7 03:41:41 UTC 2023
+
+  System load:  0.0               Processes:             97
+  Usage of /:   23.3% of 7.57GB   Users logged in:       0
+  Memory usage: 26%               IPv4 address for eth0: 172.31.26.106
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+New release '22.04.3 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Thu Dec  7 03:29:39 2023 from 58.84.60.180
+ubuntu@ip-172-31-26-106:~$ sudo -i
+root@ip-172-31-26-106:~# apt-get update
+Hit:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal InRelease
+Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+Get:6 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+Get:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Get:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Get:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+Get:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [2994 kB]
+Get:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [484 kB]
+Get:13 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [17.2 kB]
+Get:14 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2528 kB]
+Get:15 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [353 kB]
+Get:16 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [552 B]
+Get:17 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1139 kB]
+Get:18 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [273 kB]
+Get:19 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [25.7 kB]
+Get:20 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [25.8 kB]
+Get:21 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7484 B]
+Get:22 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [620 B]
+Get:23 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.7 kB]
+Get:24 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/main Translation-en [16.3 kB]
+Get:25 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1420 B]
+Get:26 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:27 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB]
+Get:28 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.3 kB]
+Get:29 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B]
+Get:30 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:31 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2604 kB]
+Get:32 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [402 kB]
+Get:33 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [13.2 kB]
+Get:34 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [2411 kB]
+Get:35 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [336 kB]
+Get:36 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [552 B]
+Get:37 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [914 kB]
+Get:38 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [192 kB]
+Get:39 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [19.2 kB]
+Get:40 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [23.6 kB]
+Get:41 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5504 B]
+Get:42 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [548 B]
+Fetched 29.5 MB in 6s (4718 kB/s)
+Reading package lists... Done
+root@ip-172-31-26-106:~# chef-client
+Starting Chef Client, version 14.15.6
+resolving cookbooks for run list: ["myFirstChefCB071223"]
+Synchronizing Cookbooks:
+  - myFirstChefCB071223 (0.1.0)
+Installing Cookbook Gems:
+Compiling Cookbooks...
+Converging 1 resources
+Recipe: myFirstChefCB071223::default
+  * apt_package[apache2] action install
+
+    - install version 2.4.41-4ubuntu3.15 of package apache2
+
+Running handlers:
+Running handlers complete
+Chef Client finished, 1/1 resources updated in 54 seconds
+root@ip-172-31-26-106:~#
+root@ip-172-31-26-106:~#
