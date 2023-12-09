@@ -1,0 +1,19 @@
+cd cookbooks
+chef generate cookbook mywebservercookbook
+cd mywebservercookbook
+berks install
+berks upload
+
+chef generate attribute default 
+
+
+git bash---> sudo-i
+sudo apt-get update
+sudo apt-get install apache2
+chef-client
+
+
+
+#include_recipe 'mywebservercookbook::mywebrecipe'
+#include_recipe 'mywebservercookbook::mytree'
+#mypack = 'apache2'
